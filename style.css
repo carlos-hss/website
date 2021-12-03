@@ -40,6 +40,7 @@ header .navegation li {
     list-style: none;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header #login {
@@ -52,6 +53,7 @@ main .firstPart {
     align-items: center;
     justify-content: space-around;
     height: 500px;
+    margin-top: 30px;
 }
 
 .firstPart .titleAndSubtitle {
@@ -63,14 +65,15 @@ main .firstPart {
 }
 
 .firstPart h4 {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
 }
 
 .firstPart h1 {
     color: #D6000D;
-    font-size: 50px;
+    width: 300px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
@@ -86,6 +89,7 @@ main .firstPart {
     border-radius: 15px;
     border: 3px solid;
     border-color: #D6000D;
+    cursor: pointer;
 }
 
 .firstPart img {
@@ -97,6 +101,7 @@ main .secondPart {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin-top: 130px;
 }
 
 .secondPart img {
@@ -154,6 +159,7 @@ main .weCall {
     border-radius: 15px;
     border: 3px solid;
     border-color: #D6000D;
+    cursor: pointer;
 }
 
 .call input {
@@ -162,21 +168,103 @@ main .weCall {
     font-size: 18px;
     font-weight: bold;
     color: gray;
-    background-color: #bdbdbd;
+    background-color: rgb(211, 211, 211);
     border-radius: 15px;
     border: 3px solid;
-    border-color: #bdbdbd;
+    border-color: rgb(211, 211, 211);
     padding-left: 30px;
+    cursor: pointer;
+}
+
+main #comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    margin: 55px auto 10px auto;
+}
+
+#comments #firstComment {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 2px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 20px;
+    height: 40%;
+    background-color: rgb(211, 211, 211);
+}
+
+#comments .photo {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid #D6000D;
+    border-radius: 50%;
+    background-color: #D6000D;
+}
+
+#comments #text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#text1 p {
+    font-size: 16px;
+}
+
+#text1 h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#text1 h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#comments #secondComment {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 2px;
+    height: 37%;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 20px;
+    background-color: rgb(211, 211, 211);
+}
+
+#comments #text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+#text2 p {
+    font-size: 16px;
+}
+
+#text2 h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#text2 h4 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 500px;
     background-color: black;
     color: white;
-    padding-left: 25px;
 }
 
 footer .name {
@@ -184,7 +272,6 @@ footer .name {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 25px;
 }
 
 .name h2 {
@@ -196,7 +283,11 @@ footer .name {
     font-size: 20px;
 }
 
-footer .about h3 {
+footer .about {
+    margin: 0 auto 0 30px;
+}
+
+.about h3 {
     font-size: 28px;
     font-weight: bold;
 }
@@ -206,7 +297,11 @@ footer .about h3 {
     width: 200px;
 }
 
-footer .contact h3 {
+footer .contact {
+    margin: 0 auto 0 30px;
+}
+
+.contact h3 {
     font-size: 28px;
     font-weight: bold;
 }
@@ -220,16 +315,31 @@ footer .contact h3 {
     margin: 14px 0 8px 0;
 }
 
+.contact .email {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .contact p {
     font-size: 18px;
     width: 200px;
 }
 
-footer .socialMedia h3 {
+footer .socialMedia {
+    margin: 0 auto 0 30px;
+}
+
+.socialMedia h3 {
     font-size: 28px;
     font-weight: bold;
 }
 
+.socialMedia div {
+    display: flex;
+    width: 50%;
+}
+
 .socialMedia img {
     width: 50px;
+    padding: 10px 35px 5px 0px;
 }
