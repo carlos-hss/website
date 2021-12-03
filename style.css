@@ -1,0 +1,235 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header #logo {
+    display: flex;
+}
+
+header #name {
+    font-size: 44px;
+    font-weight: bold;
+    color: #D6000D;
+}
+
+header #point {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+header .navegation {
+    display: flex;
+    width: 80%;
+    height: 70px;
+    min-width: 300px;
+    max-width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navegation li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header #login {
+    display: none;
+}
+
+main .firstPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.firstPart .titleAndSubtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.firstPart h4 {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.firstPart h1 {
+    color: #D6000D;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.firstPart button {
+    width: 270px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #D6000D;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #D6000D;
+}
+
+.firstPart img {
+    width: 270px;
+}
+
+main .secondPart {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPart img {
+    width: 270px;
+}
+
+.secondPart ul {
+    margin: 30px 0;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.secondPart li {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 0 5px 25px;
+    list-style: none;
+    background-image: url("/assets/list_style-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18px;
+}
+
+main .weCall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.weCall h4 {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.weCall .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+}
+
+.call button {
+    width: 270px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #D6000D;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #D6000D;
+}
+
+.call input {
+    width: 235px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    background-color: #bdbdbd;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #bdbdbd;
+    padding-left: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+}
+
+footer .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.name h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.name p {
+    font-size: 20px;
+}
+
+footer .about h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 18px;
+    width: 200px;
+}
+
+footer .contact h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+    width: 200px;
+}
+
+.contact .adress {
+    margin: 14px 0 8px 0;
+}
+
+.contact p {
+    font-size: 18px;
+    width: 200px;
+}
+
+footer .socialMedia h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.socialMedia img {
+    width: 50px;
+}
