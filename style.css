@@ -19,6 +19,7 @@ header #name {
     font-size: 44px;
     font-weight: bold;
     color: #D6000D;
+    font-style: italic;
 }
 
 header #point {
@@ -73,7 +74,7 @@ main .firstPart {
 .firstPart h1 {
     color: #D6000D;
     width: 300px;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
@@ -136,7 +137,7 @@ main .weCall {
 }
 
 .weCall h4 {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: bold;
     color: black;
 }
@@ -182,7 +183,7 @@ main #comments {
     justify-content: space-around;
     align-items: center;
     height: 350px;
-    width: 300px;
+    width: 270px;
     margin: 55px auto 10px auto;
 }
 
@@ -218,12 +219,10 @@ main #comments {
 
 #text1 h2 {
     font-size: 25px;
-    font-weight: bold;
 }
 
 #text1 h4 {
     font-size: 18px;
-    font-weight: bold;
 }
 
 #comments #secondComment {
@@ -249,12 +248,10 @@ main #comments {
 
 #text2 h2 {
     font-size: 25px;
-    font-weight: bold;
 }
 
 #text2 h4 {
     font-size: 18px;
-    font-weight: bold;
 }
 
 footer {
@@ -277,6 +274,7 @@ footer .name {
 .name h2 {
     font-size: 44px;
     font-weight: bold;
+    font-style: italic;
 }
 
 .name p {
@@ -342,4 +340,92 @@ footer .socialMedia {
 .socialMedia img {
     width: 50px;
     padding: 10px 35px 5px 0px;
+}
+
+@media only screen and (min-width: 800px) {
+    main .firstPart {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    .image {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 40%;
+    }
+    .firstPart .titleAndSubtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 200px;
+    }
+    .firstPart img {
+        width: 70%;
+    }
+    .firstPart div {
+        width: 40%;
+    }
+    .firstPart h4 {
+        font-size: 1rem;
+    }
+    .firstPart h1 {
+        color: #D6000D;
+        width: 100%;
+        text-align: left;
+        font-size: 2.6rem;
+        margin: -15px 0 0 0;
+    }
+    main .secondPart {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 150px;
+    }
+    .secondPart img {
+        width: 26%;
+    }
+    .secondPart div {
+        width: 40%;
+    }
+    .secondPart ul {
+        margin: 30px 0;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main .weCall {
+        height: 100px;
+        margin-left: 30px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .weCall h4 {
+        font-size: 19px;
+        font-weight: bold;
+        color: black;
+    }
+    .weCall .call {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+    }
+    .call button {
+        width: 270px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .call input {
+        width: 235px;
+        height: 38px;
+        font-size: 18px;
+    }
 }
